@@ -1,0 +1,83 @@
+<h2>{{title}}</h2>
+<form name="customerForm" ng-submit="saveCustomer()">
+  <div>
+    <label>
+      <span>CPF</span>
+      <input ng-model="customer.cpf" pattern="\d+" title="Informe somente números" type="text" name="cpf" required ng-readonly="isReadOnly" />
+    </label>
+    <label>
+      <span>Nome</span>
+      <input ng-model="customer.name" type="text" name="name" required />
+    </label>
+    <label>
+      <span>E-mail</span>
+      <input ng-model="customer.email" type="email" name="email" required ng-readonly="isReadOnly" 
+       pattern="^[a-zA-Z0-9_\.-]{2,}@([A-Za-z0-9_-]{2,}\.)+[A-Za-z]{2,4}$" />
+    </label>
+   
+    <label class="passwordChange" ng-show="showPwdLink">
+      <a class="button" ng-click="showPasswordField()">Trocar Senha</a>
+    </label>
+
+    <label ng-hide="hidePassword">
+      <span>Senha</span>
+      <input ng-model="customer.password" type="password" name="password" required 
+       pattern="\w{4,6}" ng-disabled="hidePassword" />
+    </label>
+    <label ng-hide="hidePassword">
+      <span>Conf. senha</span>
+      <input ng-model="customer.passChecker" type="password" name="passChecker" required 
+       pattern="\w{4,6}" ng-disabled="hidePassword" />
+    </label>
+    <label>
+      <span>CEP</span>
+      <input ng-model="customer.zip" type="text" name="zip" required />
+    </label>
+    <label>
+      <span>Endereço</span>
+      <input ng-model="customer.address" type="text" name="address" required />
+    </label>
+    <label>
+      <span>Cidade</span>
+      <input ng-model="customer.city" type="text" name="city" required />
+    </label>
+    <label>
+      <span>Estado</span>
+      <input ng-model="customer.state" list="state" name="state" required >
+      <datalist id="state">
+        <option value="Acre">
+        <option value="Alagoas">
+        <option value="Amapá">
+        <option value="Amazonas">
+        <option value="Bahia">
+        <option value="Ceará">
+        <option value="Distrito Federal">
+        <option value="Espírito Santo">
+        <option value="Goiás">
+        <option value="Maranhão">
+        <option value="Mato Grosso">
+        <option value="Mato Grosso do Sul">
+        <option value="Minas Gerais">
+        <option value="Pará">
+        <option value="Paraíba">
+        <option value="Paraná">
+        <option value="Pernambuco">
+        <option value="Piauí">
+        <option value="Rio de Janeiro">
+        <option value="Rio Grande do Norte">
+        <option value="Rio Grande do Sul">
+        <option value="Rondônia">
+        <option value="Rorâima">
+        <option value="Santa Catarina">
+        <option value="São Paulo">
+        <option value="Sergipe">
+        <option value="Tocantins">
+      </datalist>
+    </label>
+    <label>
+      <span>Telefone</span>
+      <input ng-model="customer.mobile" type="text" name="mobile" required />
+    </label>
+    <input type="submit" value="Enviar Dados" />
+  </div>
+</form>

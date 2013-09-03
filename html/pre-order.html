@@ -1,0 +1,39 @@
+<div class="orders cart">
+	<h2>{{title}}</h2>
+	<aside class="clearfix aside-nav">
+		<a class="button" ng-click="cancelOrder($event)">&laquo; Cancelar e voltar ao carrinho</a>
+		<a class="button right-button" ng-class="{true:'disabled', false:''}[isProcessing]" ng-click="makeOrder($event)">Finalizar pedido &raquo;</a>
+	</aside>
+	<table ng-hide="isProcessing">
+		<colgroup>
+			<col class="large">
+			<col class="smaller">
+			<col class="smaller">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Produto</th>
+				<th>Quantidade</th>
+				<th>Preço (R$)</th>					
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<th colspan="2" class="total">Total</th>
+				<td class="number">{{getTotal() | currency}}</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr ng-repeat="item in items">
+				<td>{{item.product.nome}}</td>
+				<td>{{item.quantity}}</td>
+				<td class="number">{{item.total | currency}}</td>
+			</tr>
+			<tr>
+				<th colspan="2" class="total">Frete</th>
+				<td class="number">{{shipping | currency}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<p ng-show="isProcessing">{{statusMessage}}</p>
+</div>

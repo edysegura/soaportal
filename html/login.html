@@ -1,0 +1,19 @@
+<h2>{{title}}</h2>
+<form name="formLogin" ng-submit="authenticate()">
+  <div>
+    <label>
+      <span>E-mail</span>
+      <input ng-model="login" type="email" name="email" required="required" 
+       pattern="^[a-zA-Z0-9_\.-]{2,}@([A-Za-z0-9_-]{2,}\.)+[A-Za-z]{2,4}$" autofocus />
+    </label>
+    <label>
+      <span>Senha</span>
+      <input ng-model="password" type="password" name="password" required="required" />
+    </label>
+    <label>
+      <input type="checkbox" />
+      Lembrar Usuário
+    </label>
+    <input type="submit" value="Entrar" />
+  </div>
+</form>

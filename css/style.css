@@ -1,0 +1,259 @@
+html, body, h1, h2, h3, p, ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #EBE7DF url(images/bg-body.png) repeat-x 0 56px;
+	font-family: Arial,Tahoma,Verdana,Sans-Serif;
+	font-size: 14px;
+	color: #6A6A6B;
+}
+
+html, body{
+	height: 100%;
+}
+
+body > .wrapper  {
+	height: auto;
+	min-height: 100%;
+}
+
+h1, h2, h3, nav li a, .price {
+	font: bold 18px 'Economica','Arial narrow',Tahoma,Verdana,Sans-Serif;
+}
+
+h2 {
+	background: transparent url(images/title-line.png) repeat-x bottom left;
+	font-size: 22px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+/* HEADER */
+
+header {
+	background: #D05B2F url(images/bg-header.png) repeat-x left top;
+	box-shadow: 1px 0 4px rgba(0, 0, 0, 0.525);
+	height: 68px;
+	margin-bottom: 20px;
+	width: 100%;
+	z-index: 99999;
+}
+
+header h1 a {
+	color: #EBE7DF;
+	font-size: 24px;
+	float: left;
+	height: 63px;
+	line-height: 63px;
+	margin-left: 20px;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+}
+
+header h1 a:hover {
+	color: #fff;
+}
+
+/* NAV */
+
+nav {
+	float: right;
+	margin-right: 20px;
+}
+
+nav li {
+	background: transparent url(images/nav-li.png) no-repeat left top;
+	display: block;
+	float: right;
+	line-height: 63px;
+	padding: 0 20px;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.2);
+}
+
+nav li,
+nav a {
+	color: #EBE7DF;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+nav :hover {
+	color: #fff;
+}
+
+section {
+	margin: 0 auto 30px;
+	padding: 0;
+	text-align: left;
+	overflow: hidden;
+	width: 940px;
+	padding-bottom: 45px;
+}
+
+.aside-nav {
+	width: 100%;
+}
+
+/* FORM */
+
+form div {
+	margin-left: 5px;
+}
+
+form span {
+	display: block;
+	width: 103px;
+	float: left;
+	line-height: 35px;
+}
+
+form label {
+    margin: 10px 0;
+    display: block;
+}
+
+form .passwordChange {
+	clear: both;
+	overflow: auto;
+	margin-left: 104px;
+}
+
+form input, 
+form select,
+form textarea {
+    background: white;
+    border: 1px solid #c6c3bf;
+    border-radius: 5px;
+    display: block;
+    padding: 8px;
+    width: 350px;
+    box-shadow: 1px 0px 3px rgba(0,0,0,0.1);
+	-moz-box-shadow: 1px 0px 3px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 1px 0px 3px rgba(0,0,0,0.1);
+}
+
+form select {
+    width: 362px;
+}
+
+form input[type="checkbox"] {
+	display: inline;
+    width: 14px;
+}
+
+form input[type="submit"] {
+	width: 150px;
+	margin-top: 25px;
+}
+
+form input[readonly] {
+	background-color: #ccc;
+}
+
+a.disabled,
+a.disabled:hover {
+	background: none;
+	background-color: #ccc;
+	color: #eee;
+}
+
+/* BUTTON */
+
+button,
+.button,
+input[type=submit] {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e6e6e6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e6e6e6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e6e6e6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+	font: normal 14px Arial;
+	border: 1px solid #CCC;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	color: #5B5B5B;
+	cursor: pointer;
+	padding: 5px 20px;	
+	transition: color .5s ease-in-out;
+  	-moz-transition: color .5s ease-in-out;
+  	-webkit-transition: color .5s ease-in-out;	
+	transition: background .5s ease-in-out;
+  	-moz-transition: background .5s ease-in-out;
+  	-webkit-transition: background .5s ease-in-out;
+}
+
+a.button {
+	display: table-cell;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* button maker order */
+a.make-order,
+a.right-button {
+	float: right;
+}
+
+a.inline-button {
+	float: none;
+	display: inline-block;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both !important;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block !important;
+}
+ 
+html[xmlns] .clearfix {
+	display: block !important;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+button:hover,
+.button:hover,
+input[type=submit]:hover {
+	background: #D05B2F;
+	color: #fff;
+}
+
+.unit {
+	float: left;
+}
+
+
+/* FOOTER */
+
+footer {
+	position: relative;
+	margin-top: -45px;
+	height: 30px;
+	clear:both;
+	background: #373737 url(images/bg-footer.png) repeat-x left top;
+	color: #D0D0D0;
+	padding: 15px 0 0;
+	margin-bottom: 0;
+	height: 30px;
+}
+
+footer p {
+	color: #D0D0D0;
+	text-align: center;
+}

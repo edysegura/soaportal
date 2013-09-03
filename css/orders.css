@@ -1,0 +1,44 @@
+/* ORDERS */
+
+.orders section {	
+	background: #F7F6F2;
+	border: 1px solid #C8C7C2;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 96%;
+}
+
+.orders h3 {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+.orders img {
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+	padding: 2px 0;
+}
+
+.orders .img-container {
+	display: inline-block;
+	padding: 4px 4px 1px 4px;
+}
+
+.orders dl {
+	clear: both;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.orders dt {
+	float: left;
+	padding-bottom: 5px;
+}
+
+.session-details {
+	width: 45%;
+}
+
+.session-details h4 {
+	margin-top: 0;
+}

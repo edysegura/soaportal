@@ -1,0 +1,12 @@
+/* TABLE */
+
+$main-color: red;
+
+table {
+	background: #ccc;
+
+	th {
+		color: $main-color;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,6 @@
+/* TABLE */
+table {
+  background: #ccc; }
+  table th {
+    color: red;
+    font-weight: bold; }

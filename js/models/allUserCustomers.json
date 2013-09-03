@@ -1,0 +1,38 @@
+[
+    {
+        "UserCustomerId": 1,
+        "crmCustomerId": 1,
+        "cpf": "12345",
+        "login": "matilde",
+        "password": "matilde",
+        "email": "matilde@siecola.com",
+        "role": "user"
+    },
+    {
+        "UserCustomerId": 2,
+        "crmCustomerId": 2,
+        "cpf": "54321",
+        "login": "doralice",
+        "password": "doralice",
+        "email": "doralice@siecola.com",
+        "role": "user"
+    },
+    {
+        "UserCustomerId": 4,
+        "crmCustomerId": 0,
+        "cpf": "000000000000",
+        "login": "admin",
+        "password": "admin",
+        "email": "admin@siecola.com",
+        "role": "Admin"
+    },
+    {
+        "UserCustomerId": 6,
+        "crmCustomerId": 3,
+        "cpf": "06789",
+        "login": "hannah",
+        "password": "hannah",
+        "email": "hannah@example.com",
+        "role": "user"
+    }
+]

@@ -1,0 +1,11 @@
+<div class="product">
+	<h2>{{product.nome}}</h2>
+	<div class="unit img-container">
+		<img src="{{product.urlImagem}}" alt="{{product.nome}}" width="250" height="250" />
+	</div>
+
+	<span class="price">{{product.preco | currency:"R$"}}</span>
+	<p>{{product.descricao}}</p>
+
+	<button ng-click="buy(product)">Comprar</button>
+</div>

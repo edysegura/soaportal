@@ -1,0 +1,57 @@
+/* HOME */
+
+.item h2 {
+	background: #FFF;
+	border: 1px solid #D2D1CE;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.item h2:hover img {
+	/*opacity: 0.9;*/
+}
+
+.item h3 {
+	color: #78BEA1;
+	font-size: 22px;
+	margin: 5px;
+	text-align: center;
+}
+
+.item {
+	background: #F7F6F2;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	font-weight: bold;
+	margin: 0 35px 35px 0;
+	padding: 9px;
+	width: 190px;
+}
+
+.item img {
+	width: 150px;
+	height: 150px;
+}
+
+.item p {
+	font-weight: normal;
+	margin: 10px 0;
+}
+
+.item span {
+	display: block;
+	text-align: center;
+}
+
+.item button,
+.item .button {
+	margin: 10px 5px 5px 5px;
+	width: 84px;
+	padding: 5px 0;
+}
+
+section div:nth-child(4n+1) {
+	margin-right: 0;
+}

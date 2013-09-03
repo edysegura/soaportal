@@ -1,0 +1,24 @@
+POST /api/customer HTTP/1.1
+Host: siecolacrm.azurewebsites.net
+Connection: keep-alive
+Content-Length: 243
+Authorization: Basic QWRtaW46QWRtaW4=
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36
+Origin: chrome-extension://cokgbflfommojglbmbpenpphppikmonn
+Content-Type: application/json
+Accept: */*
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4
+Cookie: ARRAffinity=9b64b0293248d2e2986f44dd1eda19707eb6f40815dfb8f76adeb8545e7698be; WAWebSiteSID=8c83afcee04b426c935e818cfa612bf6
+
+{
+    "cpf": "88882",
+    "name": "Edy2",
+    "address": "Rua 10",
+    "city": "Santa Rita do Sapuca..",
+    "state": "Minas Gerais",
+    "country": "Brasil",
+    "zip": "30161970",
+    "email": "edy2@segura.com",
+    "mobile": "3599111122"
+}

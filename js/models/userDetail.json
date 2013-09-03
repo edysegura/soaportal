@@ -1,0 +1,12 @@
+{
+    "CustomerId": 1,
+    "cpf": "12345",
+    "name": "Matilde",
+    "address": "Rua 1",
+    "city": "Santa Rita do Sapucaí",
+    "state": "Minas Gerais",
+    "country": "Brasil",
+    "zip": "30161970",
+    "email": "matilde@siecola.com",
+    "mobile": "3599111122"
+}

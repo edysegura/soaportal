@@ -1,0 +1,24 @@
+/* CART */
+
+.cart table .total {
+	text-align: right;
+}
+
+.cart table td input {
+	float: left;
+	width: 75px;
+}
+
+.cart table .last input {
+	width: 75px;
+	margin-left: 3px;
+	float: none;
+}
+
+.cart .smaller {
+	width: 150px;
+}
+
+.cart .button {
+	margin-bottom: 20px;
+}

@@ -1,0 +1,26 @@
+<div class="orders">
+	<h2>{{title}}</h2>
+	<p ng-hide="hasOrders()">{{statusMessage}}</p>
+	<section ng-repeat="order in orders">
+		<div class="session-details unit">
+			<h3>Pedido realizado em {{order.dataPedido | date:'MM/dd/yyyy hh:mm'}}</h3>
+			<p>Número: {{order.OrderId}}</p>
+			<p>Previsão para entrega: {{order.dataEntrega | date:'MM/dd/yyyy'}}</p>
+			<p>Frete: {{order.precoFrete | currency:"R$ "}}</p>
+			<p>Total: {{order.precoTotalPedido + order.precoFrete | currency:"R$ "}}</p>
+		</div>
+		<div class="session-details unit">
+			<h4>Itens do pedido</h4>
+			<dl ng-repeat="item in order.OrderItem">
+					<dt>
+						<a href="#/product/{{item.Product.ProductId}}" class="img-container">
+							<img alt="foto do produto" src="{{item.Product.urlImagem}}" width="60" height="60" />
+						</a>
+					</dt>
+					<dd>{{item.Product.nome}}</dd>
+					<dd>{{item.Product.preco | currency:"R$ "}}</dd>
+					<dd><a href="#/product/{{item.Product.ProductId}}">Detalhes</a></dd>
+				</dl>
+		</div>
+	</section>
+</div>

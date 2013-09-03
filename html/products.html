@@ -1,0 +1,9 @@
+<h2 ng-bind="title()">Produtos em destaque</h2>
+<div class="item" ng-repeat="product in products">
+	<h2><a href="#/product/{{product.ProductId}}"><img src="{{product.urlImagem}}" /></a></h2>
+	<h3>{{product.nome}}</h3>			
+	<span class="price">{{product.preco | currency:"R$"}}</span>
+	<a href="#/product/{{product.ProductId}}" class="button">Detalhes</a>
+	<button ng-click="addToCart(product)">Adicionar</button>
+</div>
+<p ng-hide="hasItems()">Buscando produtos...</p>

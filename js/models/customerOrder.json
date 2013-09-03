@@ -1,0 +1,35 @@
+[
+    {
+        "OrderItem": [
+            {
+                "Product": {
+                    "ProductId": 1,
+                    "nome": "Galaxy S III",
+                    "descricao": "Smartphone Samsung Galaxy S III ",
+                    "cor": "azul",
+                    "modelo": "GT-I9300",
+                    "codigo": "SAMS-GT-I9300MBLZTO",
+                    "preco": 1269.6,
+                    "peso": 1,
+                    "altura": 5,
+                    "largura": 20,
+                    "comprimento": 25,
+                    "diametro": 22,
+                    "urlImagem": "www.google.com"
+                },
+                "OrderItemId": 6,
+                "quantidade": 1,
+                "ProductId": 1,
+                "OrderId": 6
+            }
+        ],
+        "OrderId": 6,
+        "UserCustomerId": 1,
+        "dataPedido": "2013-06-24T00:00:00",
+        "dataEntrega": "2013-06-25T00:00:00",
+        "status": "novo",
+        "precoTotalPedido": 0,
+        "pesoTotalPedido": 0,
+        "precoFrete": 0
+    }
+]

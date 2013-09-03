@@ -1,0 +1,86 @@
+[
+    {
+        "CustomerId": 1,
+        "cpf": "12345",
+        "name": "Matilde",
+        "address": "Rua 1",
+        "city": "Santa Rita do Sapucaí",
+        "state": "Minas Gerais",
+        "country": "Brasil",
+        "zip": "30161970",
+        "email": "matilde@siecola.com",
+        "mobile": "3599111122"
+    },
+    {
+        "CustomerId": 2,
+        "cpf": "54321",
+        "name": "Doralice",
+        "address": "Rua 2",
+        "city": "Santa Rita do Sapucaí",
+        "state": "Minas Gerais",
+        "country": "Brasil",
+        "zip": "37540000",
+        "email": "doralice@siecola.com",
+        "mobile": "3599111133"
+    },
+    {
+        "CustomerId": 3,
+        "cpf": "06789",
+        "name": "Hannah",
+        "address": "Rua 3",
+        "city": "Santa Rita do Sapucaí",
+        "state": "Minas Gerais",
+        "country": "Brasil",
+        "zip": "37540000",
+        "email": "hannah@siecola.com",
+        "mobile": "3599111144"
+    },
+    {
+        "CustomerId": 4,
+        "cpf": "8888",
+        "name": "Edy",
+        "address": "Rua 10",
+        "city": "Santa Rita do Sapucaí",
+        "state": "Minas Gerais",
+        "country": "Brasil",
+        "zip": "30161970",
+        "email": "edy@segura.com",
+        "mobile": "3599111122"
+    },
+    {
+        "CustomerId": 5,
+        "cpf": "88882",
+        "name": "Edy2",
+        "address": "Rua 10",
+        "city": "Santa Rita do Sapucaí",
+        "state": "Minas Gerais",
+        "country": "Brasil",
+        "zip": "30161970",
+        "email": "edy2@segura.com",
+        "mobile": "3599111122"
+    },
+    {
+        "CustomerId": 1004,
+        "cpf": "321",
+        "name": "Lidy Segura",
+        "address": "Rua 2",
+        "city": "Pouso Alegre",
+        "state": "Minas Gerais",
+        "country": "Brasil",
+        "zip": "30161970",
+        "email": "lidiane@gmail.com",
+        "mobile": "3599111122"
+    },
+    {
+        "CustomerId": 1005,
+        "cpf": "05560567637",
+        "name": "Edy Segura",
+        "address": "Rua 6",
+        "city": "Pouso Alegre",
+        "state": "Minas Gerais",
+        "country": "Brazil",
+        "zip": "37540000",
+        "email": "edysegura@gmail.com",
+        "mobile": "+55 35 8816-0105"
+    }
+]

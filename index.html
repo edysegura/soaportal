@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="soaApp">
+<head>
+	<meta charset="UTF-8" />
+	<link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
+	<link rel="stylesheet" type="text/css" href="css/table.css" />
+	<link rel="stylesheet" type="text/css" href="css/cart.css" />
+	<link rel="stylesheet" type="text/css" href="css/product.css" />
+	<link rel="stylesheet" type="text/css" href="css/orders.css" />
+
+	<title>Sapucaí Valley e-Market</title>
+
+</head>
+<body>
+
+<div class="wrapper">
+	<header ng-controller="NavigationController">
+		<h1><a href="#/">Sapucaí Valley e-Market</a></h1>
+		<nav>
+			<ul>
+				<li><a href="#orders" ng-click="isValidUser($event)">Meus Pedidos</a></li>
+				<li><a href="#cart">Carrinho</a></li>
+				<li><a href="#login" ng-hide="isAuthenticated()">Login</a></li>
+				<li><a href="#" ng-show="isAuthenticated()" ng-click="logout($event)">Logout</a></li>
+				<li><a href="#subscription" ng-hide="isAuthenticated()">Cadastro</a></li>
+				<li><a href="#my-account" ng-show="isAuthenticated($event)">Meus Dados</a></li>
+				<li><a href="#/">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section ng-view ng-cloak>
+		<!-- templates will place here -->
+	</section>
+</div>
+
+<footer>
+	<p>Sapucaí Valley e-Market</p>
+</footer>
+
+<script src="js/vendor/angular.min.js"></script>
+<script src="js/vendor/angular-resource.min.js"></script>
+<script src="js/vendor/accounting.min.js"></script>
+
+<script src="js/soaApp.js"></script>
+<script src="js/filters/filters.js"></script>
+
+<script src="js/services/AuthService.js"></script>
+<script src="js/services/ProductsService.js"></script>
+<script src="js/services/CustomerService.js"></script>
+<script src="js/services/UserCustomerService.js"></script>
+<script src="js/services/CartService.js"></script>
+<script src="js/services/OrderService.js"></script>
+
+<script src="js/controllers/NavigationController.js"></script>
+<script src="js/controllers/ProductsController.js"></script>
+<script src="js/controllers/ProductController.js"></script>
+<script src="js/controllers/SubscriptionController.js"></script>
+<script src="js/controllers/LoginController.js"></script>
+<script src="js/controllers/CartController.js"></script>
+<script src="js/controllers/PreOrderController.js"></script>
+<script src="js/controllers/OrdersController.js"></script>
+<script src="js/controllers/MyAccountController.js"></script>
+
+</body>
+</html>
