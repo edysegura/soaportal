@@ -14,7 +14,7 @@
 			<dl ng-repeat="item in order.OrderItem">
 					<dt>
 						<a href="#/product/{{item.Product.ProductId}}" class="img-container">
-							<img alt="foto do produto" src="{{item.Product.urlImagem}}" width="60" height="60" />
+							<img alt="foto do produto" ng-src="{{item.Product.urlImagem}}" width="60" height="60" />
 						</a>
 					</dt>
 					<dd>{{item.Product.nome}}</dd>
